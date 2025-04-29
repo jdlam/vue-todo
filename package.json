@@ -38,6 +38,14 @@
     "vite": "^5.3.1",
     "vite-plugin-vue-devtools": "^7.3.1",
     "vitest": "^1.6.0",
-    "vue-tsc": "^2.0.21"
+    "vue-tsc": "^2.0.21",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
